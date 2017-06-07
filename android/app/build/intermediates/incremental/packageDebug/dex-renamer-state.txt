@@ -1,4 +1,7 @@
-#Tue Jun 06 13:15:25 EET 2017
-base.0=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Wed Jun 07 23:28:07 EET 2017
+base.0=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c585967e11b51c9fabe14128941bf28142e76d79
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a173c84a55c939557d1e889ec00aa43348a6e932/classes.dex
+base.1=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a173c84a55c939557d1e889ec00aa43348a6e932
+file.0=/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c585967e11b51c9fabe14128941bf28142e76d79/classes.dex

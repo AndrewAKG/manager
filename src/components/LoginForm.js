@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Text, View } from 'react-native';
+import { Text, View, Alert } from 'react-native';
 import { Card, CardSection, Input, Button, Spinner } from './common';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 
@@ -22,6 +22,30 @@ class LoginForm extends Component {
     renderSpinner() {
         if (this.props.loading) {
             return <Spinner />
+        }
+    }
+
+    renderAlert() {
+        if (this.props.error === 'Failed') {
+            if (this.props.email === '' || this.props.password === '') {
+                Alert.alert(
+                    'InComplete Info',
+                    'please Complete your Info before logging in',
+                    [
+                        { text: 'OK', onPress: () => { } },
+                    ],
+                    { cancelable: false }
+                );
+            } else {
+                Alert.alert(
+                    'Account Creation failed',
+                    'UserName already taken !! or Maybe server is down',
+                    [
+                        { text: 'OK', onPress: () => { } },
+                    ],
+                    { cancelable: false }
+                );
+            }
         }
     }
 
@@ -47,9 +71,7 @@ class LoginForm extends Component {
                     />
                 </CardSection>
 
-                <Text style={styles.errorTextStyle}>
-                    {this.props.error}
-                </Text>
+                {this.renderAlert()}
 
                 <CardSection>
                     {this.renderSpinner()}
@@ -60,14 +82,6 @@ class LoginForm extends Component {
                 </CardSection>
             </Card>
         );
-    }
-}
-
-const styles = {
-    errorTextStyle: {
-        fontSize: 20,
-        alignSelf: 'center',
-        color: 'red'
     }
 }
 

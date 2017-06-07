@@ -5,7 +5,11 @@ import {
     PASSWORD_CHANGED,
     LOGIN_USER_SUCCESS,
     LOGIN_USER_FAIL,
-    LOGIN_USER
+    LOGIN_USER,
+    SIGNUP_USER,
+    SIGNUP_USER_SUCCESS,
+    SIGNUP_USER_FAIL,
+    SIGNOUT_USER
 } from './types';
 
 export const emailChanged = (text) => {
@@ -29,12 +33,34 @@ export const loginUser = ({ email, password }) => {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(user => loginUserSuccess(dispatch, user))
             .catch(() => {
-                firebase.auth().createUserWithEmailAndPassword(email, password)
-                    .then(user => loginUserSuccess(dispatch, user))
-                    .catch(() => loginUserFail(dispatch));
+                loginUserFail(dispatch);
             });
     };
 };
+
+export const signUpUser = ({ email, password }) => {
+    return (dispatch) => {
+        dispatch({ type: SIGNUP_USER });
+
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then(() => signUpUserSuccess(dispatch))
+            .catch(() => {
+                signUpUserFail(dispatch);
+            })
+
+    }
+};
+
+export const signOutUser = () => {
+    return (dispatch) => {
+        dispatch({ type: SIGNOUT_USER });
+
+        firebase.auth().signOut()
+            .then(() => {
+                Actions.auth({ type: 'reset' });
+            })
+    }
+}
 
 const loginUserFail = (dispatch) => {
     dispatch({
@@ -45,4 +71,13 @@ const loginUserFail = (dispatch) => {
 const loginUserSuccess = (dispatch, user) => {
     dispatch({ type: LOGIN_USER_SUCCESS, payload: user });
     Actions.main();
+}
+
+const signUpUserSuccess = (dispatch) => {
+    dispatch({ type: SIGNUP_USER_SUCCESS });
+   // Actions.login({ type: 'reset' });
+}
+
+const signUpUserFail = (dispatch) => {
+    dispatch({ type: SIGNUP_USER_FAIL });
 }

@@ -6,13 +6,13 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1496747665506"
+    timestamp="1496873861151"
     token="-921541475384520368"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1022" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -23,9 +23,6 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/home/andrew/manager/android/app/build/outputs/apk/app-debug.apk"
-        type="SPLIT_MAIN" />
     <artifact
         location="/home/andrew/manager/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
@@ -59,14 +56,14 @@
     <artifact
         location="/home/andrew/manager/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
+    <artifact
+        location="/home/andrew/manager/android/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1496747665506"
+        timestamp="1496873861151"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/andrew/manager/android/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/home/andrew/manager/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
@@ -100,6 +97,9 @@
         <artifact
             location="/home/andrew/manager/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/andrew/manager/android/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
