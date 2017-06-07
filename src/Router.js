@@ -18,7 +18,7 @@ const RouterCoponent = () => {
                     key="employeeList"
                     component={EmployeeList}
                     title="Employees"
-                    rightTitle="Add"
+                    rightTitle="Hire"
                     onRight={() => Actions.employeeCreate()}
                     initial
                 />
