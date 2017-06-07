@@ -14,8 +14,8 @@
 - password : password
 
 # Features
-- manager can login or signup using the form
-- manager can hire employees
-- manager can edit employees' info
-- manager can text his employees with a phone text message
-- manager can fire his employees
+- Manager can login or signup using the form.
+- Manager can hire employees.
+- Manager can edit employees' info.
+- Manager can text his employees with a phone text message.
+- Manager can fire his employees.
