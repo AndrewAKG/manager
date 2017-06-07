@@ -1,5 +1,5 @@
 # Manager-App
--Manager project using React Native combined with Redux
+-Manager application using React Native combined with Redux
 
 # Installation
 - open your terminal
