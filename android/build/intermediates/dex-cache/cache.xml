@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/andrew/manager/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ba46c7b4a8cf7cc6b3c753db05d1e38c96123b03">
+        <dex dex="/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c585967e11b51c9fabe14128941bf28142e76d79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/andrew/manager/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/andrew/manager/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a173c84a55c939557d1e889ec00aa43348a6e932/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/andrew/.android/build-cache/3cf16f6c706464521ab4b3097f4e5e322c8a49e3/output/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/andrew/manager/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_c453faee3f42f5c03f95d98e3460005446702471.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/andrew/.android/build-cache/3cf16f6c706464521ab4b3097f4e5e322c8a49e3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/andrew/manager/android/app/build/intermediates/pre-dexed/debug/classes_0ae2ec2dc3f46cc34dd68d31dc9217a3e62fd0df.jar" />
+    </item>
+
+</items>
